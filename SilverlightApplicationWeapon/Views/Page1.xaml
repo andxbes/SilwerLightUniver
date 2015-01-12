@@ -1,0 +1,82 @@
+﻿<navigation:Page 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" x:Class="SilverlightApplicationWeapon.Page1"
+           mc:Ignorable="d"
+           Title="Page1 Page" Height="490" Width="760">
+    <Grid x:Name="LayoutRoot" Margin="0,0,0,10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="14*"/>
+            <RowDefinition Height="11*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+
+        <TextBlock x:Name="HeaderText" Style="{StaticResource HeaderTextStyle}" Margin="0,2,0,55" Width="540" TextAlignment="Center" RenderTransformOrigin="0.491,0.556" >
+			<Run Text="Карабин охотничий КО-91/30"/>
+        </TextBlock>
+        <Image Grid.Row="2" Margin="0,20,0,10" Source="/SilverlightApplicationWeapon;component/ko-90.png" Stretch="UniformToFill"/>
+        <Canvas Grid.Column="1" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="195">
+            <Canvas.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FFA3FFCD"/>
+                </LinearGradientBrush>
+            </Canvas.Background>
+            <TextBox x:Name="Login" HorizontalAlignment="Left" Height="23" Text="Логин&#xA;" Canvas.Left="100" Canvas.Top="2" Width="85" />
+            <PasswordBox x:Name="Password"  KeyDown="PasswordBox_KeyDown" Canvas.Left="100" Canvas.Top="25" Width="85" />
+            <Button Content="OK" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="23" Click="Button_Click_1" RenderTransformOrigin="0.429,1.739" Grid.Column="1" Canvas.Left="150" Canvas.Top="54"/>
+            <sdk:Label Content="Логин" Height="28" Canvas.Left="10" Width="85"/>
+            <sdk:Label Content="Пароль" Height="28" Canvas.Left="10" Canvas.Top="23" Width="120"/>
+
+
+        </Canvas>
+        <Grid Grid.Column="1" HorizontalAlignment="Left" Height="224" Grid.Row="1" VerticalAlignment="Top" Width="195">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="81*"/>
+                <RowDefinition Height="95*"/>
+            </Grid.RowDefinitions>
+            <sdk:Calendar x:Name="calendar" HorizontalAlignment="Left" Height="169" Margin="0,55,0,0" VerticalAlignment="Top" Width="195" Grid.RowSpan="2"/>
+        </Grid>
+        <StackPanel HorizontalAlignment="Left" Grid.Row="2" Width="195" Background="#FFDCEDFB" Grid.Column="1">
+            <TextBlock TextAlignment="Center" FontWeight="Bold">
+				<Run Text="Корзина"/>
+            </TextBlock>
+            <ListBox x:Name="listBox" Height="150" Margin="10,0"/>
+        </StackPanel>
+        <Grid HorizontalAlignment="Left" Height="224" Grid.Row="1" VerticalAlignment="Top" Width="565">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="74*"/>
+                <ColumnDefinition Width="39*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="195" Background="#FFF7FBDC" Margin="0,-3,0,0" Grid.Column="1">
+                <RadioButton x:Name="radioWithPatron" Content="Комплектация с патронами " Margin="5,10,5,0" GroupName="patron" Checked="RadioButton_Checked_1" />
+                <RadioButton x:Name="radioWithOutPatron" Content="Комплектация без патронов " Margin="5,0,5,0" GroupName="patron" Checked="RadioButton_Checked_2" />
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" Height="167" VerticalAlignment="Top" Width="195" Background="#FFDCEDFB" Margin="0,57,0,0" Grid.Column="1">
+                <CheckBox x:Name="patronNorma" Content="Norma 7,62RUSS" Margin="5,10,5,0" />
+                <CheckBox x:Name="patronLpz" Content="ЛПЗ 7,62*39-8&#xA;" Margin="5,0,5,0" />
+                <ComboBox x:Name="combox" SelectedIndex="2">
+                    <ComboBoxItem Content="Чёрного цвета"/>
+                    <ComboBoxItem Content="Зеленого цвета"/>
+                    <ComboBoxItem Content="Жёлтого цвета"/>
+                </ComboBox>
+                <sdk:DatePicker x:Name="dataPicker" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="120"/>
+                <Button Content="В корзину" Margin="110,20,15,0"  Click="Button_Click_2" RenderTransformOrigin="-2,2.727"/>
+            </StackPanel>
+            <ScrollViewer HorizontalAlignment="Left" Height="224" VerticalAlignment="Top" Width="370">
+                <TextBlock x:Name="ContentText" Style="{StaticResource ContentTextStyle}"> 
+					<Run Text="7,62-мм (3-линейная) винтовка образца 1891 года (винтовка Мосина, трёхлинейка) — магазинная винтовка, принятая на вооружение Российской Императорской армии в 1891 году. Активно использовалась в период с 1891 по конец Великой Отечественной войны, в этот период многократно модернизировалась. Название трёхлинейка происходит от калибра ствола винтовки, который равен трём русским линиям (старая мера длины) — одна линия равна одной десятой дюйма, или 2,54 мм — соответственно, три линии равны 7,62 мм. На основе винтовки обр. 1891 года и её модификаций был создан целый ряд образцов спортивного и охотничьего оружия, как нарезного, так и гладкоствольного."/>
+                </TextBlock>
+            </ScrollViewer>
+        </Grid>
+
+    </Grid>
+</navigation:Page>
