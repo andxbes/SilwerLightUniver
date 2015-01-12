@@ -1,5 +1,5 @@
-﻿<xapCache source="d:\documents\visual studio 2012\Projects\SilverlightApplicationWeapon\SilverlightApplicationWeapon\Bin\Debug\SilverlightApplicationWeapon.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="12.01.2015 11:57:56">
-  <file source="d:\documents\visual studio 2012\Projects\SilverlightApplicationWeapon\SilverlightApplicationWeapon\obj\Debug\SilverlightApplicationWeapon.dll" archivePath="SilverlightApplicationWeapon.dll" lastWriteTime="12.01.2015 11:57:54" />
+﻿<xapCache source="d:\documents\visual studio 2012\Projects\SilverlightApplicationWeapon\SilverlightApplicationWeapon\Bin\Debug\SilverlightApplicationWeapon.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="12.01.2015 18:54:20">
+  <file source="d:\documents\visual studio 2012\Projects\SilverlightApplicationWeapon\SilverlightApplicationWeapon\obj\Debug\SilverlightApplicationWeapon.dll" archivePath="SilverlightApplicationWeapon.dll" lastWriteTime="12.01.2015 18:54:18" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.ComponentModel.DataAnnotations.dll" archivePath="System.ComponentModel.DataAnnotations.dll" lastWriteTime="18.11.2011 15:40:20" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.Data.dll" archivePath="System.Windows.Controls.Data.dll" lastWriteTime="18.11.2011 15:40:20" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.Data.Input.dll" archivePath="System.Windows.Controls.Data.Input.dll" lastWriteTime="18.11.2011 15:40:20" />
@@ -13,5 +13,5 @@
   <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\ru\System.Windows.Controls.resources.dll" archivePath="ru\System.Windows.Controls.resources.dll" lastWriteTime="07.12.2011 21:27:32" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\ru\System.Windows.Controls.Navigation.resources.dll" archivePath="ru\System.Windows.Controls.Navigation.resources.dll" lastWriteTime="18.11.2011 15:40:20" />
   <file source="d:\documents\visual studio 2012\Projects\SilverlightApplicationWeapon\SilverlightApplicationWeapon\ak1.mp4" archivePath="ak1.mp4" lastWriteTime="11.01.2015 22:33:30" />
-  <file source="d:\documents\visual studio 2012\Projects\SilverlightApplicationWeapon\SilverlightApplicationWeapon\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="11.01.2015 19:22:04" />
+  <file source="d:\documents\visual studio 2012\Projects\SilverlightApplicationWeapon\SilverlightApplicationWeapon\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="12.01.2015 12:12:54" />
 </xapCache>

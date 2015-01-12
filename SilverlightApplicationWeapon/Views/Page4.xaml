@@ -24,7 +24,7 @@
                     <Button x:Name="Stop" Content="Stop" Width="35" Click="Stop_Click" Background="Green"/>
                     <Button x:Name="PlayOrPause" Content="Play" Width="35" Click="PlayOrPause_Click" Background="Green"/>
                     <Button x:Name="Mute" Content="Mute" Width="35" Click="Mute_Click" Background="Green" />
-                    <Slider x:Name="volume" Width="60" Margin="5,0,0,5" ToolTipService.ToolTip="volume"/>
+                    <Slider Width="50" Minimum="0" Maximum="1" Value="{Binding Path=Volume, ElementName=player, Mode=TwoWay}" />
                 </StackPanel>
             </StackPanel>
         </ScrollViewer>
